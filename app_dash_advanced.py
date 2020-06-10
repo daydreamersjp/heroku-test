@@ -6,10 +6,12 @@ import pandas as pd
 
 app = dash.Dash()
 
-df = pd.read_csv(
-    'https://raw.githubusercontent.com/'
-    'plotly/datasets/master/'
-    '1962_2006_walmart_store_openings.csv')
+# df = pd.read_csv(
+    # 'https://raw.githubusercontent.com/'
+    # 'plotly/datasets/master/'
+    # '1962_2006_walmart_store_openings.csv')
+    
+df = pd.read_csv('https://github.com/plotly/datasets/blob/master/1962_2006_walmart_store_openings.csv')
 
 app.layout = html.Div([
     html.H1('Walmart Store Openings'),
